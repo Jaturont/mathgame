@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Game for Primary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!-- PyScript Configuration -->
+    <py-config>
+        packages = [
+            "numpy",
+            "pyodide-http==0.1.0"
+        ]
+    </py-config>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Math Game for Primary School</h1>
+        <div id="question"></div>
+        <div id="status"></div>
+        <div id="feedback"></div>
+        <div id="choices"></div>
+        <div id="score">Player 1: 0 &nbsp;&nbsp; Player 2: 0</div>
+    </div>
+
+    <!-- Celebration Modal -->
+    <div id="celebration-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="winner-message"></h2>
+            <canvas id="confetti-canvas" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Include PyScript -->
+    <py-script src="script.py"></py-script>
+</body>
+</html>

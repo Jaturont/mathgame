@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    margin: 50px auto;
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#status {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#feedback {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#choices {
+    margin: 20px 0;
+}
+
+.choice-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#score {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#confetti-canvas {
+    margin-top: 20px;
+}
